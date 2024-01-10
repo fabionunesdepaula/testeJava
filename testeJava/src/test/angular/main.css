@@ -1,0 +1,95 @@
+/* Estilo Geral */
+body, html {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Formulários */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Padrão para todos os formulários */
+    max-width: 100%;
+}
+
+/* Estilização dos Inputs */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilização do Botão */
+button {
+    background-color: #003366; /* Azul Escuro */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #002244; /* Um Azul Ainda Mais Escuro */
+}
+
+/* Placeholder */
+::placeholder {
+    color: #003366; /* Azul Escuro */
+    opacity: 1; /* Opacidade total do placeholder */
+}
+
+/* Foco no Input */
+input:focus {
+    border-color: #003366; /* Azul Escuro */
+    outline: none;
+}
+
+.banner{
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    margin-left: 100px!important; 
+    margin-bottom: -40px!important;
+    top: 80px;
+}
+
+.bannerdois{
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    margin-left: 100px!important; 
+    margin-bottom: -40px!important;
+    top: 150px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    body {
+        align-items: flex-start;
+        padding-top: 20px;
+        height: auto;
+    }
+}

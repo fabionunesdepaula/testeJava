@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Login</title>
+</head>
+<body>
+    <div><img class="bannerdois" src="img/itisbanner.png"></div>
+    <form (ngSubmit)="login()">
+        <input type="text" [(ngModel)]="loginData.email" name="email" placeholder="E-mail" />
+        <input type="password" [(ngModel)]="loginData.senha" name="senha" placeholder="Senha" />
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

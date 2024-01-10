@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div><img class="banner" src="img/itisbanner.png"></div>
+    <form (ngSubmit)="onSubmit()">
+        <input type="text" [(ngModel)]="user.nome" name="nome" placeholder="Nome" />
+        <input type="text" [(ngModel)]="user.cpf" name="cpf" placeholder="CPF" />
+        <input type="date" [(ngModel)]="user.dataNascimento" name="data_nascimento" />
+        <input type="email" [(ngModel)]="user.email" name="email" placeholder="E-mail" />
+        <input type="password" [(ngModel)]="user.senha" name="senha" placeholder="Senha" />
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
